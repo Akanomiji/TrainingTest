@@ -36,6 +36,8 @@
             button1 = new Button();
             button2 = new Button();
             label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -113,11 +115,11 @@
             // 
             // button2
             // 
-            button2.Location = new Point(474, 406);
+            button2.Location = new Point(475, 428);
             button2.Name = "button2";
             button2.Size = new Size(95, 44);
             button2.TabIndex = 6;
-            button2.Text = "เริ่มทำข้อสอบ";
+            button2.Text = "C";
             button2.UseVisualStyleBackColor = true;
             button2.Visible = false;
             button2.Click += button2_Click;
@@ -133,11 +135,33 @@
             label2.TabIndex = 7;
             label2.Text = "โจทย์";
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 18F);
+            label3.Location = new Point(360, 119);
+            label3.Name = "label3";
+            label3.Size = new Size(114, 32);
+            label3.TabIndex = 8;
+            label3.Text = "คะแนนที่ได้";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 18F);
+            label4.Location = new Point(360, 171);
+            label4.Name = "label4";
+            label4.Size = new Size(96, 32);
+            label4.TabIndex = 9;
+            label4.Text = "5 คะแนน";
+            // 
             // mathtest
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(509, 472);
+            ClientSize = new Size(570, 472);
+            Controls.Add(label4);
+            Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -162,5 +186,7 @@
         private Button button1;
         private Button button2;
         private Label label2;
+        private Label label3;
+        private Label label4;
     }
 }
