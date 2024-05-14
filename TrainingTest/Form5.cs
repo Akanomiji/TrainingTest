@@ -27,7 +27,7 @@ namespace TrainingTest
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            d = "";
             if (radioButton1.Checked == true)
             { d += radioButton1.Text; }
             if (radioButton2.Checked == true) { d += radioButton2.Text; }
@@ -39,7 +39,7 @@ namespace TrainingTest
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //string desserts = "";
+            desserts = "";
             if (checkBox1.Checked == true) { desserts += checkBox1.Text +"\n"; }
             
             if (checkBox2.Checked == true) { desserts += checkBox2.Text + "\n"; }
