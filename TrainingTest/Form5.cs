@@ -41,6 +41,7 @@ namespace TrainingTest
         {
             //string desserts = "";
             if (checkBox1.Checked == true) { desserts += checkBox1.Text +"\n"; }
+            
             if (checkBox2.Checked == true) { desserts += checkBox2.Text + "\n"; }
             if (checkBox3.Checked == true) { desserts += checkBox3.Text + "\n"; }
             if (checkBox4.Checked == true) { desserts += checkBox4.Text + "\n"; }
