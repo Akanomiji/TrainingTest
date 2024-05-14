@@ -47,7 +47,12 @@
             button2 = new Button();
             button3 = new Button();
             panel1 = new Panel();
+            pictureBox1 = new PictureBox();
+            bBrowser = new Button();
+            openFileDialog1 = new OpenFileDialog();
+            bFile = new Button();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label8
@@ -175,7 +180,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(304, 471);
+            button1.Location = new Point(140, 449);
             button1.Name = "button1";
             button1.Size = new Size(75, 51);
             button1.TabIndex = 26;
@@ -185,7 +190,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(406, 471);
+            button2.Location = new Point(242, 449);
             button2.Name = "button2";
             button2.Size = new Size(75, 51);
             button2.TabIndex = 27;
@@ -195,7 +200,7 @@
             // 
             // button3
             // 
-            button3.Location = new Point(511, 471);
+            button3.Location = new Point(347, 449);
             button3.Name = "button3";
             button3.Size = new Size(75, 51);
             button3.TabIndex = 28;
@@ -205,6 +210,7 @@
             // 
             // panel1
             // 
+            panel1.BorderStyle = BorderStyle.FixedSingle;
             panel1.Controls.Add(qty);
             panel1.Controls.Add(itemCode);
             panel1.Controls.Add(label4);
@@ -218,16 +224,53 @@
             panel1.Controls.Add(label6);
             panel1.Controls.Add(label7);
             panel1.Controls.Add(label1);
-            panel1.Location = new Point(83, 40);
+            panel1.Location = new Point(53, 37);
             panel1.Name = "panel1";
             panel1.Size = new Size(428, 395);
             panel1.TabIndex = 30;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox1.Location = new Point(529, 78);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(437, 252);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 31;
+            pictureBox1.TabStop = false;
+            // 
+            // bBrowser
+            // 
+            bBrowser.Location = new Point(727, 449);
+            bBrowser.Name = "bBrowser";
+            bBrowser.Size = new Size(98, 51);
+            bBrowser.TabIndex = 32;
+            bBrowser.Text = "Browser";
+            bBrowser.UseVisualStyleBackColor = true;
+            bBrowser.Click += bBrowser_Click;
+            // 
+            // openFileDialog1
+            // 
+            openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // bFile
+            // 
+            bFile.Location = new Point(727, 370);
+            bFile.Name = "bFile";
+            bFile.Size = new Size(98, 41);
+            bFile.TabIndex = 33;
+            bFile.Text = "ไฟล์";
+            bFile.UseVisualStyleBackColor = true;
+            bFile.Click += bFile_Click;
             // 
             // Test_font_colors_dialog2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(898, 534);
+            ClientSize = new Size(1004, 534);
+            Controls.Add(bFile);
+            Controls.Add(bBrowser);
+            Controls.Add(pictureBox1);
             Controls.Add(panel1);
             Controls.Add(button3);
             Controls.Add(button2);
@@ -236,6 +279,7 @@
             Text = "Test_font_colors_dialog2";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -260,5 +304,9 @@
         private Button button2;
         private Button button3;
         private Panel panel1;
+        private PictureBox pictureBox1;
+        private Button bBrowser;
+        private OpenFileDialog openFileDialog1;
+        private Button bFile;
     }
 }

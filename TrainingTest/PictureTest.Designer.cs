@@ -41,6 +41,8 @@
             button10 = new Button();
             button11 = new Button();
             button12 = new Button();
+            openFileDialog1 = new OpenFileDialog();
+            button13 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -57,7 +59,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(260, 485);
+            button1.Location = new Point(300, 456);
             button1.Name = "button1";
             button1.Size = new Size(79, 42);
             button1.TabIndex = 1;
@@ -67,7 +69,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(354, 485);
+            button2.Location = new Point(394, 456);
             button2.Name = "button2";
             button2.Size = new Size(75, 42);
             button2.TabIndex = 2;
@@ -77,7 +79,7 @@
             // 
             // button3
             // 
-            button3.Location = new Point(448, 485);
+            button3.Location = new Point(488, 456);
             button3.Name = "button3";
             button3.Size = new Size(75, 42);
             button3.TabIndex = 3;
@@ -87,7 +89,7 @@
             // 
             // button4
             // 
-            button4.Location = new Point(553, 485);
+            button4.Location = new Point(593, 456);
             button4.Name = "button4";
             button4.Size = new Size(75, 42);
             button4.TabIndex = 4;
@@ -97,7 +99,7 @@
             // 
             // button5
             // 
-            button5.Location = new Point(677, 485);
+            button5.Location = new Point(717, 456);
             button5.Name = "button5";
             button5.Size = new Size(75, 42);
             button5.TabIndex = 5;
@@ -107,7 +109,7 @@
             // 
             // button6
             // 
-            button6.Location = new Point(677, 549);
+            button6.Location = new Point(717, 520);
             button6.Name = "button6";
             button6.Size = new Size(75, 42);
             button6.TabIndex = 10;
@@ -117,7 +119,7 @@
             // 
             // button7
             // 
-            button7.Location = new Point(553, 549);
+            button7.Location = new Point(593, 520);
             button7.Name = "button7";
             button7.Size = new Size(75, 42);
             button7.TabIndex = 9;
@@ -127,7 +129,7 @@
             // 
             // button8
             // 
-            button8.Location = new Point(448, 549);
+            button8.Location = new Point(488, 520);
             button8.Name = "button8";
             button8.Size = new Size(75, 42);
             button8.TabIndex = 8;
@@ -137,7 +139,7 @@
             // 
             // button9
             // 
-            button9.Location = new Point(354, 549);
+            button9.Location = new Point(394, 520);
             button9.Name = "button9";
             button9.Size = new Size(75, 42);
             button9.TabIndex = 7;
@@ -147,7 +149,7 @@
             // 
             // button10
             // 
-            button10.Location = new Point(260, 549);
+            button10.Location = new Point(300, 520);
             button10.Name = "button10";
             button10.Size = new Size(79, 42);
             button10.TabIndex = 6;
@@ -176,11 +178,26 @@
             button12.UseVisualStyleBackColor = true;
             button12.Click += button12_Click;
             // 
+            // openFileDialog1
+            // 
+            openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // button13
+            // 
+            button13.Location = new Point(710, 384);
+            button13.Name = "button13";
+            button13.Size = new Size(75, 40);
+            button13.TabIndex = 13;
+            button13.Text = "เลือกรูป";
+            button13.UseVisualStyleBackColor = true;
+            button13.Click += button13_Click;
+            // 
             // PictureTest
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1052, 599);
+            Controls.Add(button13);
             Controls.Add(button12);
             Controls.Add(button11);
             Controls.Add(button6);
@@ -215,5 +232,7 @@
         private Button button10;
         private Button button11;
         private Button button12;
+        private OpenFileDialog openFileDialog1;
+        private Button button13;
     }
 }

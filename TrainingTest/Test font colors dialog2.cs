@@ -38,5 +38,19 @@ namespace TrainingTest
             colorDialog1.ShowDialog();
             panel1.BackColor = colorDialog1.Color;
         }
+
+        private void bBrowser_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.ShowDialog();
+            pictureBox1.Image = System.Drawing.Image.FromFile(openFileDialog1.FileName);
+        }
+
+        private void bFile_Click(object sender, EventArgs e)
+        {
+            //openFileDialog1.ShowDialog();
+            //openFileDialog1.Filter = "picture file(*.png;*.jpg)";
+            //openFileDialog1.FilterIndex = 1;
+            //pictureBox1.Image = System.Drawing.Image.FromFile(openFileDialog1.Filter = "picture file(*.png;*.jpg)";);
+        }
     }
 }

@@ -74,11 +74,11 @@ namespace TrainingTest
             i = i - 1;
             pictureBox1.Image = System.Drawing.Image.FromFile("D:\\Pic\\" + imageList[i]);
             button12.Enabled = true;
-            if (i == 0) 
-            { 
-                button11.Enabled = false; 
+            if (i == 0)
+            {
+                button11.Enabled = false;
             }
-            
+
 
 
             /*
@@ -105,11 +105,11 @@ namespace TrainingTest
             i = i + 1;
             pictureBox1.Image = System.Drawing.Image.FromFile("D:\\Pic\\" + imageList[i]);
             button11.Enabled = true;
-            if (i == imageList.Length -1) 
+            if (i == imageList.Length - 1)
             {
-                button12.Enabled = false; 
+                button12.Enabled = false;
             }
-            
+
             /*
             if (imageList.Length >= 0)
             {
@@ -125,6 +125,13 @@ namespace TrainingTest
                 pictureBox1.Image = System.Drawing.Image.FromFile("D:\\Pic\\" + imageList[0]);
             }
             */
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.ShowDialog();
+            pictureBox1.Image = System.Drawing.Image.FromFile(openFileDialog1.FileName);
+            //imageList = openFileDialog1.FileNames;
         }
     }
 }
