@@ -23,13 +23,13 @@ namespace TrainingTest
         */
 
         string[] answer = { "69", "69", "69", "69", "69" };
-        string[,] choice = 
-            { 
+        string[,] choice =
+            {
             { "65", "55", "68", "69"},
                            { "45","62","69","71"},
                            { "70","69","65","68"},
                            { "69","72","62", "65" },
-                           { "68","67","61","69"} 
+                           { "68","67","61","69"}
              };
         int i = 0;
         int score = 0;
@@ -44,7 +44,7 @@ namespace TrainingTest
             radioButton3.Text = choice3[i];
             radioButton4.Text = choice4[i];
             */
-            
+
             showQuestion();
         }
 
@@ -86,22 +86,22 @@ namespace TrainingTest
         */
             if (i < question.Length - 1) { i++; showQuestion(); }
             else { button1.Enabled = false; }
-            label4.Text = score.ToString(score+" คะแนน");
+            label4.Text = score.ToString(score + " คะแนน");
 
 
         }
 
-        private void showQuestion() 
+        private void showQuestion()
         {
             label1.Text = question[i];
-            radioButton1.Text = choice[i,0];
-            radioButton2.Text = choice[i,1];
-            radioButton3.Text = choice[i,2];
-            radioButton4.Text = choice[i,3];
+            radioButton1.Text = choice[i, 0];
+            radioButton2.Text = choice[i, 1];
+            radioButton3.Text = choice[i, 2];
+            radioButton4.Text = choice[i, 3];
             label4.Text = score.ToString(score + " คะแนน");
         }
 
-        private void correctAns() 
+        private void correctAns()
         {
             string ans = "";
 
@@ -132,33 +132,10 @@ namespace TrainingTest
                 MessageBox.Show("คำตอบผิด");
             }
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         private void button2_Click(object sender, EventArgs e)
         {
-            
-            
+            if (MessageBox.Show("แน่ใจนะที่จะปิด", "ยืนยัน", MessageBoxButtons.YesNo) == DialogResult.Yes) { this.Close(); }
+            //ปุ่มกดออก 
         }
 
 
@@ -221,6 +198,11 @@ namespace TrainingTest
         }
 
         private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mathtest_Load(object sender, EventArgs e)
         {
 
         }
